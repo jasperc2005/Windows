@@ -5,6 +5,8 @@ from rich import print_json
 
 os.system('cls')
 
+done = False
+
 
 banner = '''
      ___                             __    __     
@@ -30,3 +32,16 @@ if data["setup_type"] != 'default' or data["setup_type"] != 'full' or data["setu
     print_json(data=data)
     print('')
     print(Colorate.Color(Colors.purple, ' String should = default or full or essential or custom\n'))
+
+elif data["setup_type"] == 'default':
+    print('')
+
+
+elif data["setup_type"] == 'full':
+    print('')
+
+elif data["setup_type"] == 'essential':
+    print('')
+
+elif data["setup_type"] == 'custom':
+    print('')

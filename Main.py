@@ -1,7 +1,7 @@
 import os
 from pystyle import *
-
-
+import json
+from rich import print_json
 
 os.system('cls')
 
@@ -18,3 +18,12 @@ banner = '''
 
 print(banner)
 
+print(Colorate.Color(Colors.green, ' reading "config.json"...\n'))
+
+
+setup_type = open('config.json')
+
+data = json.load(setup_type)
+
+
+print_json(data=data)

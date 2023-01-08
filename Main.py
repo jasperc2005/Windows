@@ -51,46 +51,7 @@ if data["setup_type"] == 'full':
     os.system("powershell -command Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))")
 
     applications = '''
-    choco install visualstudiocode -y
-    choco install slack -y
-    choco install pandoc -y
-    
-    
-    choco install git -y
-    choco install github -y -ignore-checksums
-    
-     
-    choco install docker-desktop -y
-    choco install terraform -y
-    choco install chefdk -y
-    choco install packer -y
-    choco install vagrant -y
-    
-     
-    choco install kubernetes-cli -y
-    choco install kubernetes-helm -y
-    choco install minikube -y
-    choco install eksctl -y
-    
-     
-    choco install azure-data-studio -y
-    choco install sql-server-management-studio -y
-    
-    
-    choco install putty -y
-    choco install mremoteng -y
-    
-     
-    choco install azure-cli -y
-    choco install awscli -y
-    
-    
-    choco install python3 -y
-    choco install pip -y
-    
-    
-    pip install pre-commit
-    pip install terrascan
+
     
         
         

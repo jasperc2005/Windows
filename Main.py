@@ -93,7 +93,6 @@ if data["setup_type"] == 'full':
     '''
     os.system(applications)
     
-        
 
 elif data["setup_type"] == 'essential':
     print('')
@@ -106,3 +105,6 @@ else:
     print_json(data=data)
     print('')
     print(Colorate.Color(Colors.purple, ' String should = full or essential or custom\n'))
+    print(Colorate.Color(Colors.red, ' Press Enter To Exit\n'))
+    input('')
+    

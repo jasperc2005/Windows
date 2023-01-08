@@ -40,6 +40,7 @@ if data["setup_type"] == 'full':
     print(Colorate.Color(Colors.purple, ' Installing Spotify (No Ads)...', True))
     os.system('curl -L -O https://github.com/SpotX-CLI/SpotX-Win/releases/download/1.7/Install.bat')
     os.system(f'Install.bat')
+    os.remove('Install.bat')
 
     
         

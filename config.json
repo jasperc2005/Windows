@@ -1,4 +1,5 @@
 {
     "setup_type": "full",
-    "gamer": "True_or_False"
+    "gamer": "True_or_False",
+    "Custom_Cursors": "Cursors_File_URL_Here"
 }

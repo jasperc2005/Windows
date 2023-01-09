@@ -11,6 +11,12 @@ When you have a fresh `Operating System` you may find yourself spending a long t
 
 Your json file is very crucial to get this software to work and to keep the storage capcity needed limited.
 
+Here you will need to fill out the fields so the `HID` can download and remove the files after usage.
+
+`setup_type` is the type of setup you want. (Full or Custom)
+`gamer` Setting this to True will install Game libraries such as `Steam` onto your PC.
+`Custom_Cursors` This will install your custom cursors and apply them in the registry.
+
 ```json
 
 {
@@ -20,3 +26,4 @@ Your json file is very crucial to get this software to work and to keep the stor
 }
 
 ```
+

@@ -5,8 +5,10 @@ from rich import print_json
 import getpass
 from elevate import elevate
 from time import sleep
+from colorama import *
+import errors
 
-elevate()
+## elevate()
 
 
 
@@ -44,7 +46,7 @@ data = json.load(setup_type)
 if data["setup_type"] == 'full':
     print_json(data=data)
     print('')
-    sleep(2)
+    ##sleep(2)
 
     '''
     Installation of Chocolatey the package manager for Windows
@@ -52,19 +54,45 @@ if data["setup_type"] == 'full':
     '''
     os.system("powershell -command Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))")
 
-    os.system()
+
+'''
+Install Chrome or FireFox depending on which one is in the "search_engine" field.
+
+If empty error will be declared.
+
+'''
+if data["search_engine"] != 'chrome' or data["search_engine"] != 'firefox':
+    setup_type = open('config.json')
+    print_json(data=data)
+    print('')
+    print(Colorate.Color(Colors.red, 'Field "search_engine" can not be empty...', True))
+    errors.search_engine()
+elif data["search_engine"] == 'chrome':
+    print(Colorate.Color(Colors.purple, 'Installing Google Chrome...', True))
+    os.system('choco install googlechrome -y --force')
+
+elif data["search_engine"] == 'firefox':
+    print(Colorate.Color(Colors.purple, 'Installing FireFox...', True))
+    os.system('choco install firefox -y --force')
+
+        
+
+
+        
+        
+
 
     '''
     The below will retrieve the Latest SpotX Installation of spotify and install it to PC
 
     Everyone Likes Music Dont they...
     
-    '''
+    
     print(Colorate.Color(Colors.purple, ' Installing Spotify (No Ads)...', True))
     os.system('curl -L -O https://github.com/SpotX-CLI/SpotX-Win/releases/download/1.7/Install.bat')
     os.system(f'Install.bat')
     os.remove('Install.bat')
-
+    '''
 
     
 

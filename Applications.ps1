@@ -1,3 +1,7 @@
+## This file is for people only wanting to install apps and nothing else
+## Change according to your apps that are needed.
+## visit https://community.chocolatey.org/ for more information and commands for installation.
+
 choco install visualstudiocode -y
 choco install slack -y
 choco install pandoc -y

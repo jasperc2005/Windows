@@ -18,11 +18,11 @@ Here you will need to fill out the fields so the `HID` can download and remove t
 `Custom_Cursors` This will install your custom cursors and apply them in the registry.
 
 ```json
-
 {
     "setup_type": "full",
     "gamer": "True_or_False",
-    "Custom_Cursors": "Cursors_File_URL_Here"
+    "search_engine": ""
+
 }
 
 ```

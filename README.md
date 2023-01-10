@@ -26,4 +26,3 @@ Here you will need to fill out the fields so the `HID` can download and remove t
 }
 
 ```
-

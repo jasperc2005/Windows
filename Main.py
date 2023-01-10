@@ -75,7 +75,8 @@ elif data["search_engine"] == 'firefox':
     print(Colorate.Color(Colors.purple, 'Installing FireFox...', True))
     os.system('choco install firefox -y --force')
 
-        
+
+
 
 
         

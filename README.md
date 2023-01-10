@@ -21,7 +21,8 @@ Here you will need to fill out the fields so the `HID` can download and remove t
 {
     "setup_type": "full",
     "gamer": "True_or_False",
-    "search_engine": ""
+    "search_engine": "",
+    "spotify": "True_False"
 
 }
 

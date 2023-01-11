@@ -20,9 +20,10 @@ Here you will need to fill out the fields so the `HID` can download and remove t
 ```json
 {
     "setup_type": "full",
+    "spotify": "True",
     "gamer": "True_or_False",
     "search_engine": "",
-    "spotify": "True_False"
+
 
 }
 
